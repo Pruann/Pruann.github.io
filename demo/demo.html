@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+<div id="app">
+  <select  id="selection"  onchange="getVal()">
+    <option value="first">1</option>
+    <option value="second">2</option>
+    <option value="third">3</option>
+  </select>
+
+</div>
+
+
+<script>
+function getVal() {
+  var selection =document.getElementById("selection")
+  var index = selection.selectedIndex
+  console.log(index)
+  var selectedVal=selection.options[index].value
+  alert(selectedVal)
+}
+
+</script>
+
+
+</body>
+</html>
